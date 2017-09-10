@@ -4,10 +4,10 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="quizResults">
-<h3><?php JText::_(COM_QUIZ_RESULTS_TITLE); ?></h3>
-<p><?php JText::_(COM_QUIZ_RESULTS_INTRO_TEXT); ?></p> 
-<p><?php JText::_(COM_QUIZ_PERSONAL_FREEDOM_SCORE).' '.$this->personalScore; ?>/100</p> 
-<p><?php JText::_(COM_QUIZ_ECONOMIC_FREEDOM_SCORE).' '.$this->economicScore; ?>/100</p>
+<h3><?php echo JText::_(COM_QUIZ_RESULTS_TITLE); ?></h3>
+<p><?php echo JText::_(COM_QUIZ_RESULTS_INTRO_TEXT); ?></p> 
+<p><?php echo JText::_(COM_QUIZ_PERSONAL_FREEDOM_SCORE).' '.$this->personalScore; ?>/100</p> 
+<p><?php echo JText::_(COM_QUIZ_ECONOMIC_FREEDOM_SCORE).' '.$this->economicScore; ?>/100</p>
 
 <div class="nolanChartWrapper">
   <canvas id="quizResults" height="640" width="640"></canvas>
