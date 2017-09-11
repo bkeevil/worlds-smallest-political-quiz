@@ -14,6 +14,6 @@ Don't change the the size of location of the grid in the image unless you're wil
 ### CSS
 Cut and paste the following CSS code into your template to help you get started
 
-div.nolanChartWrapper { text-align: center; }
-table.nolanScores { width: 100%; }
-table.nolanScores td { text-align: center; padding: 10px; }
+    div.nolanChartWrapper { text-align: center; }
+    table.nolanScores { width: 100%; }
+    table.nolanScores td { text-align: center; padding: 10px; }
