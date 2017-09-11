@@ -6,8 +6,6 @@ defined('_JEXEC') or die('Restricted access');
 <div class="quizResults">
 <h1><?php echo JText::_(COM_QUIZ_RESULTS_TITLE); ?></h1>
 <p><?php echo JText::_(COM_QUIZ_RESULTS_INTRO_TEXT); ?></p> 
-<p><?php echo JText::_(COM_QUIZ_PERSONAL_FREEDOM_SCORE).' '.$this->personalScore; ?>/100</p> 
-<p><?php echo JText::_(COM_QUIZ_ECONOMIC_FREEDOM_SCORE).' '.$this->economicScore; ?>/100</p>
 
 <div class="nolanChartWrapper">
   <canvas id="quizResults" height="640" width="640"></canvas>
@@ -61,5 +59,11 @@ defined('_JEXEC') or die('Restricted access');
    imageObj.src = '/media/com_quiz/politicalquiz.jpg'; // url of nolan chart background image
  </script>
   </div>
+  <table class="nolanScores">
+  <tr>
+    <td><?php echo JText::_(COM_QUIZ_PERSONAL_FREEDOM_SCORE).' '.$this->personalScore; ?>/100 </td>
+    <td><?php echo JText::_(COM_QUIZ_ECONOMIC_FREEDOM_SCORE).' '.$this->economicScore; ?>/100</td>
+  </tr>
+  </table>
 </div>
 
