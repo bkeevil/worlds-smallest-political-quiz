@@ -10,3 +10,10 @@ There is no backend for this component, however it does log quiz results to a ta
 To customize the color of the dot on the chart see the file components/com_quiz/views/results/tmpl/default.php
 
 Don't change the the size of location of the grid in the image unless you're willing to figure out the matrix rotation in the above file (its a tad complicated).
+
+### CSS
+Cut and paste the following CSS code into your template to help you get started
+
+div.nolanChartWrapper { text-align: center; }
+table.nolanScores { width: 100%; }
+table.nolanScores td { text-align: center; padding: 10px; }
