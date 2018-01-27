@@ -13,7 +13,7 @@ class QuizViewQuiz extends JViewLegacy
         	$app = JFactory::getApplication();
         	$menu = $app->getMenu();
         	$active = $menu->getActive();
-        	$this->Itemid = $active->id;
+        	$this->itemid = $active->id;
 		
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
