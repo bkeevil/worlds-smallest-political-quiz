@@ -9,8 +9,12 @@ class QuizViewQuiz extends JViewLegacy
 
 		// Assign data to the view
 		$this->personalQuestions = $this->get('PersonalQuestions');
-        $this->economicQuestions = $this->get('EconomicQuestions');
-
+        	$this->economicQuestions = $this->get('EconomicQuestions');
+        	$app = JFactory::getApplication();
+        	$menu = $app->getMenu();
+        	$active = $menu->getActive();
+        	$this->Itemid = $active->id;
+		
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
 		{
