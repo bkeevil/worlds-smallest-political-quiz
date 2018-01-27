@@ -5,7 +5,9 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="politicalQuiz">
-<h1><?php echo JText::_('COM_QUIZ_QUIZ_TITLE'); ?></h1>
+<div class="page-header">
+  <h2><?php echo JText::_('COM_QUIZ_QUIZ_TITLE'); ?></h2>
+</div>
 <p><?php echo JText::_('COM_QUIZ_QUIZ_INTRO_TEXT'); ?></p>
 <form action="index.php?option=com_quiz&task=save" method="post">
 <table width="100%" class="politicalquiz">
