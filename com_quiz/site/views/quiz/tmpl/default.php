@@ -47,6 +47,7 @@ defined('_JEXEC') or die('Restricted access');
 </table>
 <br />
 <input type="hidden" name="random" value="<?php echo date('md'); echo rand(); ?>" />
+<input type="hidden" name="itemid" value="<?php echo $this->itemid; ?>" />
 <input type="submit" value="See Your Results" />
 </form>
 </div>
