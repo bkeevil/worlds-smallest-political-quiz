@@ -15,5 +15,5 @@ CREATE TABLE `#__quiz` (
   `E4` tinyint(3) unsigned NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-ALTER TABLE `jos_quiz`
+ALTER TABLE `#__quiz`
  ADD PRIMARY KEY (`ID`);
