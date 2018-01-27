@@ -4,7 +4,9 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="quizResults">
-<h1><?php echo JText::_('COM_QUIZ_RESULTS_TITLE'); ?></h1>
+<div>
+  <h2><?php echo JText::_('COM_QUIZ_RESULTS_TITLE'); ?></h2>
+</div>
 <p><?php echo JText::_('COM_QUIZ_RESULTS_INTRO_TEXT'); ?></p> 
 
 <div class="nolanChartWrapper">
