@@ -9,7 +9,9 @@ class QuizController extends JControllerLegacy
     {
         $model = $this->getModel();
         $id = $model->save();
-        $url = 'index.php?option=com_quiz&view=results&PersonalScore='.$model->getPersonalScore().'&EconomicScore='.$model->getEconomicScore();
+        $jinput = JFactory::getApplication()->input;
+        $itemid = $jinput->getInt('itemid');
+        $url = 'index.php?option=com_quiz&Itemid='.$itemid.'&view=results&PersonalScore='.$model->getPersonalScore().'&EconomicScore='.$model->getEconomicScore();
         $this->setRedirect($url);
     }
 
